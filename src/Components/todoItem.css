@@ -1,0 +1,49 @@
+/* TodoItem.css */
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .todo-item:last-child {
+    border-bottom: none;
+  }
+  
+  .todo-item input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+  }
+  
+  .todo-item input[type="text"]:focus {
+    border-bottom: 2px solid #007bff;
+    outline: none;
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .todo-item button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .todo-item button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .todo-item button:hover:not(:disabled) {
+    color: #007bff;
+  }
+  
